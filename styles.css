@@ -1,0 +1,213 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+}
+
+.section-title h3{
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.hr-style{
+  border: 0.313rem dotted white;
+  border-bottom: none;
+  width: 3.125rem;
+}
+
+/* Header Starts */
+header{
+  background-image: url("./images/header-background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar{
+  padding: 1% 10%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar-icon{
+  color: white;
+}
+.navbar-brand img{
+  width: 3.75rem;
+  height: auto;
+}
+.nav-link{
+  color: white;
+  margin: 0.625rem;
+  border-radius: 0.313rem;
+  transition: transform 0.2s;
+}
+.nav-link:hover{
+  background: #2980b9;
+  color: white;
+  transform: scale(1.1);
+}
+.banner-container{
+  height: 85.25vh;
+}
+.banner-container h1{
+  font-size: 3.5rem;
+  background-color: rgba(7, 101, 189, 0.8);
+  padding: 0.625rem 1.25rem;
+  font-family: 'Handlee', cursive;
+  border-radius: 0.313rem;
+}
+/* Header Ends */
+
+/* Features Start */
+#features{
+  padding: 5% 10%;
+  background: #e8ded2;
+}
+.feature-col{
+  border: 1px solid #ff02c0;
+  border-radius: 5px;
+  padding: 0.938rem;
+  margin: 1.25rem 0;
+  transition: transform 0.4s;
+}
+.feature-col:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 6px 5px grey;
+  cursor: pointer;
+}
+.icon-style{
+  background: #bb0aac;
+  color: white;
+  padding: 0.938rem;
+  margin: 0.313rem 0;
+}
+/* Features End */
+
+/* About-Me Starts */
+#about-me{
+  padding: 4% 10%;
+  background: #e8ded2;
+}
+#about-me p{
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  font-weight: light;
+}
+#about-me a{
+  font-size: 0.9rem;
+  font-weight: lighter;
+  color: black;
+  text-decoration: underline;
+}
+#about-me span{
+  font-weight: bold;
+}
+.star{
+  width: 1.25rem;
+}
+/* About-Me End */
+
+/* Tutorials Starts here */
+#tutorial{
+  padding: 4% 10%;
+  background: #a3d2ca;
+}
+.card{
+  transition: transform 0.4s;
+  border: 1px solid #ff02c0;
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 2px 6px 5px grey;
+  cursor: pointer;
+}
+.tutorial-img-style{
+  height: 13rem;
+}
+/* Tutorials End */
+
+/* Feedback Starts */
+#feedback{
+  padding: 5%;
+  background: #5eaaa8;
+}
+.carousel-item{
+  text-align: center;
+  padding: 5% 15%;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.feedback-img{
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 0.313rem;
+  object-fit: cover;
+}
+.carousel-indicators{
+  bottom: -5%
+}
+/* Feedback Ends */
+
+/* Contact Starts */
+#contact{
+  padding: 2% 10%;
+  background: #5eaaa8;
+}
+.form-group label{
+  margin-bottom: 0;
+  font-weight: bold;
+}
+/* Contact Ends */
+
+/* footer starts */
+footer{
+  padding: 1% 10%;
+  background: #056676;
+}
+footer a{
+  color: white;
+  margin: 0 0.625rem;
+}
+footer a:hover{
+  color: black;
+}
+/* footer ends */
+
+/* Media query */
+@media screen and (max-width: 1199px){
+  .tutorial-img-style{
+    height: 10rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .nav-link:hover{
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-link{
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .nav-link:hover{
+    padding-left: 0;
+  }
+  .banner-container h1{
+    font-size: 2.5rem;
+  }
+  .tutorial-img-style{
+    height: 15rem;
+  }
+}
+@media screen and (max-width: 576px){
+  .mb-sm-3{
+    margin-bottom: 1rem!important;
+  }
+  .tutorial-img-style{
+    height: 15rem;
+  }
+}

@@ -211,3 +211,8 @@ footer a:hover{
     height: 15rem;
   }
 }
+@media screen and (max-width: 385px){
+  .btn-subscribe{
+    margin-top: 1rem;
+  }
+}
